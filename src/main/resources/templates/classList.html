@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>班级信息</title>
+</head>
+<body>
+<h1>班级管理</h1>
+<table>
+    <tr>
+        <th>编号</th>
+        <th>班级名</th>
+        <th>人数</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="class : ${classes}">
+        <td th:text="${class.id}">none</td>
+        <td th:text="${class.name}">none</td>
+        <td th:text="${class.num}">0</td>
+        <td><a>编辑</a><a>删除</a></td>
+    </tr>
+</table>
+</body>
+</html>
