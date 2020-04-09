@@ -14,6 +14,7 @@
     <name>student_springboot</name>
     <description>Demo project for Spring Boot</description>
 
+<!--    请修改目标分支-->
     <properties>
         <java.version>1.8</java.version>
     </properties>
